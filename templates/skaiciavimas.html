@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Skaičiavimas{% endblock %}
+
+{% block content %}
+<h1>Skaičiavimas</h1>
+{% for x in range(10) %}
+{% if x % 2 == 0 %}
+<p>{{ x }}</p>
+<hr>
+{% endif %}
+{% endfor %}
+{% endblock %}

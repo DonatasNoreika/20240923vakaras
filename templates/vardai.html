@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Vardai{% endblock %}
+
+{% block content %}
+<h1>Vardai</h1>
+{% for vardas in sarasas %}
+<b>{{ vardas }}</b>
+<hr>
+{% endfor %}
+{{ kintamasis }}
+{% endblock %}
